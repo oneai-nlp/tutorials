@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "oneai": "^0.3.8"
+  },
+  "type": "module"
+}
