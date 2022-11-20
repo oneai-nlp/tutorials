@@ -1,6 +1,6 @@
 import oneai
 
-#oneai.api_key = "< Your API key >"
+oneai.api_key = "< Your API key >"
 
 url = "https://techcrunch.com/2022/11/18/elon-musk-talked-about-laying-off-75-of-employees-he-may-have-just-gotten-his-wish/"
 
