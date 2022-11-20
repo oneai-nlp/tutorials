@@ -2,7 +2,7 @@ import oneai
 
 oneai.api_key = "< Your API key from oneai>" 
 
-url = "https://techcrunch.com/2022/11/18/elon-musk-talked-about-laying-off-75-of-employees-he-may-have-just-gotten-his-wish/"
+url = "https://techcrunch.com/2022/11/17/twitter-is-working-on-a-feature-to-divide-long-text-into-a-thread-automatically/"
 
 pipeline = oneai.Pipeline(
   steps = [
