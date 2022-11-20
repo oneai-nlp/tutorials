@@ -19,3 +19,5 @@ for segment in output.html_article.segments.output_spans:
     output_ = oneai.Pipeline(steps =[oneai.skills.Topics(),oneai.skills.Summarize(max_length=240)]).run(segment[0].text)
     tweet = output_.summary.text + " ".join(["#" + topic for topic in output_.topics.values])
     tweets.append(tweet)
+
+See more : docs.oneai.com/docs
