@@ -1,0 +1,19 @@
+import oneai
+import base64
+#oneai.api_key = "[YOUR ONEAI API KEY]"
+Website = "https://www.assemblyai.com"
+pipeline = oneai.Pipeline(
+    steps = [
+        oneai.skills.HtmlToArticle(),
+        oneai.skills.Keywords(),
+        oneai.skills.Topics(),
+        oneai.skills.Names(),
+        ]
+    )
+Output = pipeline.run(Website)
+
+topics = Output.html_article.topics.values
+
+keywords = set(Output.html_article.keywords.names)
+
+names = set(Output.html_article.names.values)
